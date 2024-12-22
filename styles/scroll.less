@@ -1,0 +1,55 @@
+/* MUDANDO A APARÊNCIA DOS SCROLLS */
+
+/* width */
+::-webkit-scrollbar {
+  width: .625rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--theme-light-color);
+  border-radius: .3125rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-color);
+}
+
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+  background: var(--theme-dark-color);
+}
+
+/* Computador */
+@media only screen and (min-width: 735px) {
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: .625rem;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: .3125rem;
+  }
+}
+
+/* Celular / Tablet */
+@media only screen and (max-width: 735px) {
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: .375rem;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: .1875rem;
+  }
+}
